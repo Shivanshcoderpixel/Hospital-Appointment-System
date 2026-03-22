@@ -1,0 +1,134 @@
+Hospital Appointment System (Java) - Project Report
+1. Introduction
+I built this Hospital Appointment System in Java to get a hands-on feel for managing patient appointments in a structured way. The goal? Simulate a real hospital scenario where patients book slots and doctors handle their schedules without chaos. Instead of just reading about OOP and data structures in books, I wanted to apply them practically here.
+
+2. Problem Statement
+Hospitals often mess up appointment handling—patients deal with endless waits, zero clue on doctor availability, and total confusion about their turn. I've been there myself, stuck in line feeling frustrated, which sparked the idea for a straightforward system to make things clearer and more efficient.
+
+3. Objectives
+My main aims were:
+
+Build a system for booking and managing appointments smoothly.
+
+Use a First-Come First-Serve (FCFS) queue for fair ordering.
+
+Track doctor availability on the fly.
+
+Cut down waiting times by streamlining patient flow.
+
+Put OOP principles and data structures to work on a real problem.
+
+4. System Architecture and Design
+I went with a modular, object-oriented design, turning real-world pieces into classes. The Doctor class handles doctor info and availability; Patient tracks patient details; and Appointment links them with a unique token. Keeping things separated made the code clean, debugging a breeze, and testing way easier—I learned that the hard way after some early tangles.
+
+5. Data Structures Used
+I leaned on Java's Collections Framework for smart data handling:
+
+ArrayList: Perfect for lists of doctors and patients—dynamic sizing and quick access without hassle.
+
+Queue (via LinkedList): Manages appointments in strict FIFO order. It tripped me up at first, but testing edge cases helped me grasp how it nails fair scheduling.
+
+Token Counter: Just a simple incrementing int to assign unique tokens per appointment.
+
+6. Functional Modules
+I broke the system into bite-sized modules for better organization:
+
+Doctor Management
+
+Patient Management
+
+Appointment Booking
+
+Queue (Token) Management
+
+Patient Serving
+
+Appointment Viewing
+
+User Interface
+
+This modular setup showed me how big apps emerge from small, focused parts.
+
+7. Key Design Decisions
+A few choices shaped the project:
+
+Queue for FCFS fairness—no cutting lines.
+
+Simple boolean flags for doctor availability (skipped fancy algorithms to stay focused).
+
+Console UI to prioritize logic over looks.
+
+Separate classes for modularity and easy tweaks.
+
+I toyed with extra features but reined it in to nail the basics first.
+
+8. Workflow of the System
+Here's how it flows:
+
+Register doctors and patients.
+
+Show available doctors.
+
+Pick a doctor and patient.
+
+Create an appointment with a token.
+
+Add it to the queue.
+
+Serve patients one by one in order.
+
+This keeps adds and removes zippy and straightforward.
+
+9. Challenges Faced
+I hit some bumps:
+
+Wrapping my head around queue logic—poll vs. peek had me scratching my head.
+
+Updating doctor availability post-appointment (bugs led to double-bookings until I traced the flow).
+
+Robust user input to dodge crashes from bad entries.
+
+Debugging those fixed my mistakes and sharpened my logic skills.
+
+10. Learning Outcomes
+Key takeaways:
+
+Turning everyday problems into working code.
+
+OOP in action, beyond textbooks.
+
+Queues shining in real scheduling.
+
+Value of modular, readable code.
+
+Plus, my debugging game leveled up—I feel way more confident building from scratch now.
+
+11. Limitations
+It's not perfect yet:
+
+No permanent storage (all in-memory).
+
+One patient per doctor at a time.
+
+Plain console, no GUI.
+
+No time slots.
+
+12. Future Scope
+Room to grow:
+
+Add Java Swing/JavaFX for a GUI.
+
+Hook up a database like MySQL.
+
+Login/auth features.
+
+Time-slot scheduling.
+
+Priority queues for emergencies.
+
+13. Conclusion
+This project really clicked for me—showed how basic OOP and data structures tackle real issues like hospital queues. It's simple now, but with tweaks, it could evolve into something production-ready.
+
+14. Author
+Shivansh Jaswal
